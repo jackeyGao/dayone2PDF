@@ -15,7 +15,7 @@
 - Jinja2
 - PyPDF2  
 
-More please view [`requirements.txt`](/requirements.txt) file.
+see [`requirements.txt`](/requirements.txt) file for more package's dependencies.
 
 ## Usage
 
