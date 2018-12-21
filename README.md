@@ -2,9 +2,9 @@
 ![](/assets/cover.png)
 
 <p align="center">
-<a href="https://github.com/jackeyGao/dayone2PDF"<b>dayone2PDF</b></a> is a script for convert your dayone journal to pdf book. 
+    <p><a href="https://github.com/jackeyGao/dayone2PDF"<b>dayone2PDF</b></a> is a script for convert your dayone journal to pdf book. </p>
 
-dayone2PDF is just render html using dayone export file then print the PDF with pyQt5.
+    <p>dayone2PDF is just render html using dayone export file then print the PDF with pyQt5.</p>
 </p>
 
 
