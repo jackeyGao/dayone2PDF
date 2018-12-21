@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %} {{ name }} {% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="../../assets/global.css">
+    <link rel="stylesheet" href="../../assets/entry.css">
+    <link rel="stylesheet" href="../../assets/semantic/components/table.min.css">
+{% endblock %}
+
+{% block main %}
+<div id="entryMain">
+    <p class="post-date">Posted {{ entry.create.format('YYYY-MM-DD HH:mm:ss') }}</p>
+    {% if 'weather' in entry %}
+    <p class="post-date">Weather: {{ entry.weather.conditionsDescription }}</p>
+    {% endif %}
+    {{ content }}  
+    <hr/>
+    
+    <div class="meta" style="text-align: right;">
+    {% if 'location' in entry %}
+    <p class="post-date" >
+        {{ entry.location.country }}{% if entry.location.administrativeArea %}·{{ entry.location.administrativeArea }} {% endif %}
+    </p>
+    <p class="post-date">
+        {{ entry.location.placeName }}
+    </p>
+    {% endif %}
+
+    <div class="sets">
+        <a class="set book" >《{{ book }}》</a>
+    </div>
+    {% if 'tags' in entry %}
+        {% for tag in entry.tags %}
+            <div class="sets">
+                <a class="set" >#{{ tag }}</a>
+            </div>
+        {% endfor %}
+    {% endif %}
+    </div>
+</div>
+{% endblock %}

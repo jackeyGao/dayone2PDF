@@ -1,0 +1,6 @@
+dayone
+output
+pdfs
+*.pyc
+.DS_Store
+*.pdf
