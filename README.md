@@ -10,6 +10,7 @@
 
 ## Requirements
 
+- Python3.6+
 - PyQt5==5.11.3 
 - Jinja2
 - PyPDF2  
