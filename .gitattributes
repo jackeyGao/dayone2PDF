@@ -1,0 +1,5 @@
+.gitignore text
+
+*.gitattributes text
+
+*.css linguist-language=Python
